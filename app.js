@@ -30,8 +30,8 @@ addBtn.addEventListener('click', function(){
         return;
     }
     
-
-    expenses.push({category, amount, date});
+//Add expense to array and update total
+  expenses.push({category, amount, date});
     
     totalAmount += amount;
 
@@ -72,7 +72,7 @@ addBtn.addEventListener('click', function(){
 
      categoryCell.textContent = expense.category;
      amountCell.textContent = expense.amount;
-     dateCell.textContent = expense.amount;
+     dateCell.textContent = expense.date;
      deleteCell.appendChild(deleteBtn);
     
 });
